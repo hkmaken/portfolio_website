@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Professional Creative Portfolio - Showcasing design, video animation, and development projects.">
+  <title>Creative Portfolio | Showcasing Excellence</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <span class="logo-accent">Hassan</span>Kamran
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#portfolio" class="nav-link">Portfolio</a>
+        <a href="#about" class="nav-link">About & Skills</a>
+        <a href="#contact" class="nav-link btn-nav">Hire Me</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-background-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-tag">Welcome to my creative space</span>
+        <h1 class="hero-title">Crafting Visual & Digital <span class="text-gradient">Masterpieces</span></h1>
+        <p class="hero-subtitle">
+          <b>Design. Code. Experience.</b><br>
+          I’m a multidisciplinary creator specializing in web development, UI/UX and graphic design.
+          I craft beautiful interfaces, write clean code, and design compelling brand identities that capture
+          attention
+          and deliver seamless user journeys.
+        </p>
+        <div class="hero-actions">
+          <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+
+        <!-- Stats/Metrics -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">50+</span>
+            <span class="stat-label">Projects Completed</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">99%</span>
+            <span class="stat-label">Success Rate</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-glow"></div>
+        <div class="hero-img-card">
+          <!-- Placeholder avatar image that we will generate -->
+          <img src="assets/hassan.jpeg" alt="Creative Professional Portfolio Owner" class="hero-profile-img"
+            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22><rect width=%22100%%22 height=%22100%%22 fill=%22%231e293b%22/><circle cx=%22200%22 cy=%22200%22 r=%22100%22 fill=%22%236366f1%22 opacity=%220.8%22/><text x=%2250%%22 y=%2250%%22 font-family=%22Outfit%22 font-size=%2224%22 fill=%22%23ffffff%22 text-anchor=%22middle%22 dy=%22.3em%22>Creative Designer</text></svg>'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Showcase</span>
+        <h2 class="section-title">Explore My Work</h2>
+        <p class="section-subtitle">Filter through categories and subcategories to view a glimps of my work.</p>
+      </div>
+      <!-- Search and Filtering Controls -->
+      <div class="portfolio-controls">
+        <div class="search-box-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="portfolio-search" placeholder="Search projects by title or tech..."
+            aria-label="Search portfolio">
+        </div>
+
+        <div class="category-filters" id="category-filters">
+          <button class="filter-btn active" data-category="all">All Work</button>
+          <button class="filter-btn" data-category="designing">Designing</button>
+          <button class="filter-btn" data-category="development">Development</button>
+        </div>
+      </div>
+
+      <!-- Dynamic Subcategory Filters -->
+      <div class="subcategory-filters-wrapper" id="subcategory-filters-container">
+        <!-- Javascript will inject subcategories here, e.g., Flyer Making, Business Cards, Video Animations -->
+      </div>
+
+      <!-- Portfolio Grid -->
+      <div class="portfolio-grid" id="portfolio-grid">
+        <!-- Javascript will inject project cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About, Skills & Experience Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-info">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Bringing Ideas to Life</h2>
+          <p class="about-text">
+            I am a passionate designer and developer with a keen eye for aesthetics and a drive to create highly
+            functional, beautiful digital experiences. My hybrid skillset allows me to bridge the gap between creative
+            visual designs and clean, robust technical implementations.
+          </p>
+          <p class="about-text">
+            Whether you need a compelling brand flyer, elegant modern business cards, fluid custom animations, or
+            responsive web tools, I deliver custom solutions tailored to your unique identity.
+          </p>
+
+          <div class="experience-tabs">
+            <button class="tab-btn active" data-tab="skills">Skills</button>
+            <button class="tab-btn" data-tab="timeline">Experience Timeline</button>
+          </div>
+        </div>
+
+        <div class="tab-content-container">
+          <!-- Skills Tab Content -->
+          <div class="tab-content active" id="tab-skills">
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h3>Designing</h3>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span>Flyer & Banner Design</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 95%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span>Business Cards & Identity</span>
+                    <span>90%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span>Video & Motion Animations</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h3>Development</h3>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span>HTML / CSS (Responsive)</span>
+                    <span>95%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 95%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span>JavaScript (ES6+)</span>
+                    <span>88%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 88%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-header">
+                    <span>Python & Automation</span>
+                    <span>80%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" style="width: 80%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Tab Content -->
+          <div class="tab-content" id="tab-timeline">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">2024 - Present</span>
+                <h4 class="timeline-title">Lead Creative Freelancer</h4>
+                <p class="timeline-desc">Designing professional brand collaterals, promotional flyers, and corporate
+                  video advertisements for high-profile clients globally.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">2022 - 2024</span>
+                <h4 class="timeline-title">Interactive Designer & Dev</h4>
+                <p class="timeline-desc">Built interactive web tools and landing pages while crafting marketing flyers,
+                  animated motion graphics, and corporate stationery.</p>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <span class="timeline-date">2020 - 2022</span>
+                <h4 class="timeline-title">Junior Visual Designer</h4>
+                <p class="timeline-desc">Learned visual styling, brand graphics, typography, business card layouts, and
+                  promotional video animations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-container">
+      <div class="contact-info">
+        <span class="section-tag">Let's Collaborate</span>
+        <h2 class="section-title">Start Your Next Project</h2>
+        <p class="contact-desc">
+          Ready to scale your business identity with professional designs or custom software applications? Feel free to
+          reach out. I typically reply within 24 hours.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <p>hkmaken@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-detail-item">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>+92 331 6080690</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="contact-name" class="form-control" required placeholder=" ">
+              <label for="contact-name" class="form-label">Full Name</label>
+              <span class="error-msg" id="name-error">Name is required</span>
+            </div>
+            <div class="form-group">
+              <input type="email" id="contact-email" class="form-control" required placeholder=" ">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <span class="error-msg" id="email-error">Enter a valid email address</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <select id="contact-service" class="form-control" required>
+              <option value="" disabled selected hidden></option>
+              <option value="Flyer Making">Flyer Making</option>
+              <option value="Business Card Designs">Business Card Designs</option>
+              <option value="Video Animations">Video Animations</option>
+              <option value="Web App/Development">Web App / Development</option>
+              <option value="Other">Other Design/Development Services</option>
+            </select>
+            <label for="contact-service" class="form-label select-label">Select Service Required</label>
+            <span class="error-msg" id="service-error">Please select a service</span>
+          </div>
+
+          <div class="form-group">
+            <textarea id="contact-message" class="form-control" rows="5" required placeholder=" "></textarea>
+            <label for="contact-message" class="form-label">Tell me about your project...</label>
+            <span class="error-msg" id="message-error">Message cannot be empty</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">
+            Send Message
+            <svg class="send-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+        <div class="success-message" id="form-success">
+          <div class="success-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </div>
+          <h3>Message Sent Successfully!</h3>
+          <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+          <button class="btn btn-secondary btn-sm" id="btn-success-reset">Send Another Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#" class="logo"><span class="logo-accent">Hassan</span>Kamran</a>
+        <p>Bringing ideas into stunning visual realities and efficient digital systems.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About Me</a>
+      </div>
+
+      <div class="footer-socials">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="#" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+          </a>
+          <a href="#" aria-label="Dribbble">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path
+                d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.49-11.05 1-11.6 8.56">
+              </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Antigravity. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-content-grid">
+        <!-- Media Slider (Left Panel) -->
+        <div class="modal-media-panel">
+          <div class="slider-container">
+            <div class="slider-wrapper" id="modal-slider">
+              <!-- Dynamically populated pictures/videos -->
+            </div>
+            <!-- Navigation Arrows if multiple media -->
+            <button class="slider-arrow arrow-left" id="slider-prev" aria-label="Previous image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="slider-arrow arrow-right" id="slider-next" aria-label="Next image">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <!-- Dots -->
+            <div class="slider-dots" id="slider-dots"></div>
+          </div>
+        </div>
+
+        <!-- Info Details (Right Panel) -->
+        <div class="modal-info-panel">
+          <div class="modal-category-tags">
+            <span class="tag-main" id="modal-tag-category">Category</span>
+            <span class="tag-sub" id="modal-tag-subcategory">Subcategory</span>
+          </div>
+          <h2 class="modal-title" id="modal-title">Project Title</h2>
+
+          <div class="modal-description-wrapper">
+            <h3>Overview</h3>
+            <p id="modal-desc">This is the detailed description of the project.</p>
+          </div>
+
+          <div class="modal-meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Client</span>
+              <span class="meta-val" id="modal-client">Freelance / Personal</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Tech Stack</span>
+              <div class="meta-tags-container" id="modal-tech-tags">
+                <!-- Javascript will inject list of tech tags -->
+              </div>
+            </div>
+          </div>
+
+          <div class="modal-actions">
+            <a href="#" target="_blank" class="btn btn-primary btn-modal-link" id="modal-action-btn">
+              <span>Launch Project</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
