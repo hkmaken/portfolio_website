@@ -1,0 +1,17 @@
+{
+  "title": "Modern Coffee Branding",
+  "subtitle": "A complete identity for a specialty roaster",
+  "category": "Branding",
+  "client": "Hearth & Bean",
+  "year": 2025,
+  "services": ["Logo Design", "Packaging", "Typography"],
+  "description": "A warm, modern identity system for a specialty coffee roaster, from logo to packaging.",
+  "problem": "Hearth & Bean had outgrown a logo that read as generic and inconsistent across packaging.",
+  "process": "Audited competitors, defined a warm editorial voice, explored marks, then built a flexible system.",
+  "solution": "A custom wordmark, a warm palette, and a packaging grid that scales across the product range.",
+  "tools": ["Illustrator", "InDesign", "Photoshop"],
+  "deliverables": ["Logo suite", "Packaging system", "Brand guidelines"],
+  "tags": ["Branding", "Packaging", "Typography"],
+  "featured": true,
+  "order": 1
+}
