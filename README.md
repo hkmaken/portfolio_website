@@ -188,3 +188,4 @@ public/         static assets (portrait, og, cv); public/content is generated
 scripts/        sync-content.mjs (copies content images into public)
 types/          TypeScript types
 ```
+
