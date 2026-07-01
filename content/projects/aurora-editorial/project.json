@@ -1,0 +1,17 @@
+{
+  "title": "Aurora Editorial",
+  "subtitle": "Art direction and layout for a print quarterly",
+  "category": "Print",
+  "client": "Aurora Magazine",
+  "year": 2024,
+  "services": ["Art Direction", "Editorial Layout", "Typography"],
+  "description": "A confident editorial system for an independent culture quarterly, built around a flexible grid.",
+  "problem": "Each issue was laid out from scratch, producing an inconsistent voice and slow production.",
+  "process": "Defined a master grid, a type hierarchy, and reusable section templates the editors could apply.",
+  "solution": "A distinctive editorial language that speeds production while letting each feature breathe.",
+  "tools": ["InDesign", "Photoshop"],
+  "deliverables": ["Master grid", "Type system", "Section templates"],
+  "tags": ["Editorial", "Typography", "Print"],
+  "featured": true,
+  "order": 2
+}
