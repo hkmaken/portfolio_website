@@ -1,0 +1,17 @@
+{
+  "title": "Studio Poster Series",
+  "subtitle": "An illustrated poster set for a concert season",
+  "category": "Illustration",
+  "client": "Northside Hall",
+  "year": 2023,
+  "services": ["Illustration", "Poster Design", "Typography"],
+  "description": "A set of bold, illustrative posters announcing a concert hall's seasonal programme.",
+  "problem": "The venue's promotion looked tired and failed to convey the energy of its live programme.",
+  "process": "Developed an illustration language per genre, then unified it under one typographic system.",
+  "solution": "A vivid, cohesive poster series that travels from street to social while feeling unmistakably one venue.",
+  "tools": ["Illustrator", "Photoshop", "Procreate"],
+  "deliverables": ["Poster series", "Social adaptations", "Type lockups"],
+  "tags": ["Illustration", "Poster", "Typography"],
+  "featured": false,
+  "order": 4
+}
