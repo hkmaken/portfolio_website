@@ -17,7 +17,9 @@ export const site: SiteConfig = {
   email: "hkmaken@gmail.com",
   phone: "+92 331 6080690",
   location: "Pakistan",
-  url: "https://example.com",
+  mapBbox: "60.5,23.5,77.9,37.2", // bounds shown by the contact-page map
+
+  url: "https://hkmaken.github.io/portfolio_website",
   formspreeId: "your-form-id",
   socials: [
     { label: "GitHub", href: "https://github.com/hkmaken", icon: "github" },

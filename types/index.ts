@@ -64,6 +64,7 @@ export interface SiteConfig {
   email: string;
   phone?: string;
   location: string;
+  mapBbox: string; // OSM embed viewport: "minLon,minLat,maxLon,maxLat"
   url: string; // canonical site URL, no trailing slash
   formspreeId: string;
   socials: SocialLink[];
