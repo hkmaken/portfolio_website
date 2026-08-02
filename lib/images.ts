@@ -1,6 +1,7 @@
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 import sharp from "sharp";
+import { asset } from "./base-path";
 import type { GalleryImage } from "@/types";
 
 const PUBLIC_DIR = path.join(process.cwd(), "public");
@@ -19,7 +20,9 @@ export async function buildImage(
     .webp({ quality: 40 })
     .toBuffer();
   return {
-    src: publicRelPath.startsWith("/") ? publicRelPath : `/${publicRelPath}`,
+    src: asset(
+      publicRelPath.startsWith("/") ? publicRelPath : `/${publicRelPath}`,
+    ),
     alt,
     width: meta.width ?? 1200,
     height: meta.height ?? 800,

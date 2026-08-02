@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { site } from "@/config/site";
+import { basePath } from "./base-path";
 import type { Project } from "@/types";
 
 export function baseMetadata(): Metadata {
@@ -28,15 +29,18 @@ export function baseMetadata(): Metadata {
 }
 
 export function projectMetadata(p: Project): Metadata {
+  // metadataBase already carries the basePath and Next joins it onto relative
+  // metadata paths, so strip the prefix that `asset()` added for <Image>.
+  const cover = p.cover.src.slice(basePath.length);
   return {
     title: p.title,
     description: p.description,
     openGraph: {
       title: p.title,
       description: p.description,
-      images: [p.cover.src],
+      images: [cover],
     },
-    twitter: { card: "summary_large_image", images: [p.cover.src] },
+    twitter: { card: "summary_large_image", images: [cover] },
     alternates: { canonical: `/portfolio/${p.slug}/` },
   };
 }

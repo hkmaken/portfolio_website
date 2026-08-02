@@ -84,10 +84,14 @@ export default function ContactPage() {
             </ul>
           </div>
 
-          {/* Map placeholder — swap for an <iframe> embed if desired (see README) */}
-          <div className="flex h-40 items-center justify-center rounded-lg border border-dashed border-border text-sm text-muted-foreground">
-            Map of {site.location}
-          </div>
+          {/* ponytail: keyless OpenStreetMap embed driven by site.mapBbox —
+              swap for a geocoded/API-key provider only if pin accuracy matters. */}
+          <iframe
+            title={`Map of ${site.location}`}
+            src={`https://www.openstreetmap.org/export/embed.html?bbox=${site.mapBbox}&layer=mapnik`}
+            loading="lazy"
+            className="h-40 w-full rounded-lg border border-border"
+          />
         </div>
 
         {/* Form */}

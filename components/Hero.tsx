@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { site } from "@/config/site";
+import { asset } from "@/lib/base-path";
 import { buttonVariants } from "@/components/ui/button";
 import Reveal from "@/components/Reveal";
 
@@ -36,7 +37,7 @@ export default function Hero() {
       <Reveal delay={0.1}>
         <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-xl bg-muted">
           <Image
-            src="/portrait.jpg"
+            src={asset("/portrait.jpg")}
             alt={`Portrait of ${site.name}`}
             fill
             sizes="(max-width: 768px) 80vw, 360px"

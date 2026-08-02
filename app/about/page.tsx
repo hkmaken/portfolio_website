@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Download } from "lucide-react";
 import { site } from "@/config/site";
+import { asset } from "@/lib/base-path";
 import { buttonVariants } from "@/components/ui/button";
 import Tag from "@/components/Tag";
 import Reveal from "@/components/Reveal";
@@ -19,7 +20,7 @@ export default function AboutPage() {
         <Reveal>
           <div className="relative mx-auto aspect-[4/5] w-full max-w-xs overflow-hidden rounded-xl bg-muted">
             <Image
-              src="/portrait.jpg"
+              src={asset("/portrait.jpg")}
               alt={`Portrait of ${site.name}`}
               fill
               sizes="(max-width: 768px) 70vw, 320px"
@@ -37,7 +38,7 @@ export default function AboutPage() {
               ))}
             </div>
             <a
-              href={site.cvPath}
+              href={asset(site.cvPath)}
               download
               className={buttonVariants({ className: "mt-6" })}
             >
